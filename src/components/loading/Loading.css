@@ -1,0 +1,16 @@
+.loading{
+    position: absolute;
+    left: 0;
+    top: 60px;
+    z-index: 1;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3334468b;
+}
+
+h3{
+    color: white;
+}

@@ -1,0 +1,15 @@
+.rating-component{
+    display: flex;
+    gap: 4px;
+}
+
+.good{
+    color: #47b449;
+}
+
+.avg{
+    color: #ffa534;
+}
+.bad{
+    color: #ff4545;
+}
