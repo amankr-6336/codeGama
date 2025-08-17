@@ -15,11 +15,11 @@ function ProductListing() {
 
   console.log("okatyyybyyb")
 
-  const url = selectedCategory
-    ? `/products/category/${selectedCategory}`
-    : "/products";
+  // const url = selectedCategory
+  //   ? `/products/category/${selectedCategory}`
+  //   : "/products";
 
-  const { data, loading, error } = useFetch(url);
+  // const { data, loading, error } = useFetch(url);
 
   console.log(
     "okay i m into it"
