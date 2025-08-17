@@ -19,6 +19,10 @@ function ProductListing() {
 
   const { data, loading, error } = useFetch(url);
 
+  console.log(
+    "okay i m into it"
+  )
+
   useEffect(() => {
     if (data) {
       dispatch(setProducts(data));
