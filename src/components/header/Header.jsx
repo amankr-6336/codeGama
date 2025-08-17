@@ -6,6 +6,10 @@ import CartPanel from "../cart/CartPanel";
 
 function Header() {
   const cartProuductList = useSelector((state) => state.cartReducer.cart);
+   let quantitycount=0;
+   for( let product of cartProuductList){
+     quantitycount+=product.quantity;
+   }
   const [showCart, setShowCart] = useState(false);
 
 
@@ -21,7 +25,7 @@ function Header() {
 
       <div className="right-navbar">
         <p onClick={handleToggleCart}>
-          <IoCartOutline /> {cartProuductList.length>0 && <span>{cartProuductList.length}</span>}
+          <IoCartOutline /> {cartProuductList.length>0 && <span>{quantitycount}</span>}
         </p>
       </div>
       {showCart && <CartPanel close={handleToggleCart} cartItem={cartProuductList} />}
