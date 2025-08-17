@@ -13,11 +13,13 @@ function ProductListing() {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const productList = useSelector((state) => state.ProductListReducer.products);
 
-  const url = selectedCategory
-    ? `/products/category/${selectedCategory}`
-    : "/products";
+  console.log("okatyyybyyb")
 
-  const { data, loading, error } = useFetch(url);
+  // const url = selectedCategory
+  //   ? `/products/category/${selectedCategory}`
+  //   : "/products";
+
+  // const { data, loading, error } = useFetch(url);
 
   console.log(
     "okay i m into it"
