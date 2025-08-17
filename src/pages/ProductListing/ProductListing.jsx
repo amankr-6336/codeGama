@@ -13,6 +13,8 @@ function ProductListing() {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const productList = useSelector((state) => state.ProductListReducer.products);
 
+  console.log("okatyyybyyb")
+
   const url = selectedCategory
     ? `/products/category/${selectedCategory}`
     : "/products";
